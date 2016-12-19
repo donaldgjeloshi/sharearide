@@ -1,9 +1,28 @@
 
 
-<html>
-  <head>
+<?php session_start();?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FIND A RIDE</title>
     <meta charset="utf-8">
-    <title>SAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+
     <meta name="description" content="The first carpooling company in Albania." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Codeply">
@@ -11,130 +30,97 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-  <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i> Landing Zero</a>
-            </div>
-            <div class="navbar-collapse collapse" id="bs-navbar" background="black">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="page-scroll" href="index.html">SAR</a>
-                    </li>
-                    <li>
-						<a class="page-scroll" href="about.html">About</a>
-					</li>
-                    <li>
-                        <a class="page-scroll" href="findaride.php">Find a ride</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#three">Offer a ride</a>
-                    </li>
 
-                    <li>
-                        <a class="page-scroll" href="#last">Contact</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-					<li>
-                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">Log In</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">Sign In</a>
-                    </li>
+</head>
 
-                </ul>
+
+<body>
+<?php
+include 'navbar.php';
+?>
+
+
+<section class="bg-primary" id="one">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <form class="form-horizontal" action="searchCategory.php" method="post">
+                    <fieldset>
+
+                                                <!-- Form Name -->
+                        <legend style= "color:red">FIND A RIDE</legend>
+
+
+
+                        <button type="button" class="btn btn-default">Default</button>
+                        <div class="form-group">
+                            <label for="usr">Find A Ride :</label>
+                            <input type="text" class="form-control" id="usr">
+                        </div>
+                        <?php
+                        /*
+                        if(isset($_POST["Search"])) {
+
+                            require_once '../dbConnect.php';
+                            $search="%".$_POST['pSearch']."%";
+                            $sql = "SELECT p.Name AS Name, p.Preis AS Preis, p.Beschreibung AS Beschreibung, c.Name AS cName";
+                            $sql .= " FROM [4yS4_DonaldGjeloshi_webshop].[dbo].[Produkt] AS p";
+                            $sql .= " JOIN [4yS4_DonaldGjeloshi_webshop].[dbo].[Kategory] AS c";
+                            $sql .= " ON p.ID_Kategory = c.ID_Kategory";
+                            $sql .= " WHERE p.Name LIKE ?";
+                            $sql .= " OR p.Beschreibung LIKE ?";
+                            $sql .= " OR c.Name LIKE ?";
+
+
+
+                            $sth = $dbh->prepare($sql);
+                            $sth->bindParam(1, $search );
+                            $sth->bindParam(2, $search);
+                            $sth->bindParam(3, $search);
+
+                            $sth->execute();
+                            $result=$sth->fetchAll(PDO::FETCH_ASSOC);
+
+                            echo "<h3>Results</h3>";
+
+                            echo "<table class=\"table table-striped\">";
+                            echo "<tr>";
+                            echo "<th>Name</th>";
+                            echo "<th>Price</th>";
+                            echo "<th>Description</th>";
+                            echo "<th>Category</th>";
+                            echo "</tr>";
+
+                            if(count($result) > 0) {
+                                foreach($result as $row) {
+
+                                    echo "<tr>";
+                                    echo "<td>" . $row["Name"] . "</td>";
+                                    echo "<td>" . $row["Preis"] . "</td>";
+                                    echo "<td>" . $row["Beschreibung"] . "</td>";
+                                    echo "<td>" . $row["cName"] . "</td>";
+                                    echo "</tr>";
+
+                                }
+                            } else
+                                echo "<h2>There is no Product with that name, category, price or description!</h2>";
+
+                            echo "</table>";
+
+                        }
+                        */
+                         ?>
+
+                    </fieldset>
+                </form>
             </div>
         </div>
-    </nav>
+    </div>
+    </div>
+</section>
+<?php
+include 'footer.php';
+?>
 
-  <header id="first">
-      <div class="header-content">
-          <div class="inner">
-              <h1 class="cursive">Share A Ride</h1>
-              <h4>The first carpooling company in Albania.</h4>
-              <hr>
-              <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Offer a ride</a> &nbsp;
-              <a href="#one" class="btn btn-primary btn-xl page-scroll">Find a ride</a>
-          </div>
-      </div>
-      
-  </header>
-  
-  <section class="bg-primary" id="one">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
-                  <h2 class="margin-top-0 text-primary">Built On The Bootstrap Grid</h2>
-                  <br>
-                  <p class="text-faded">
-                      Bootstrap's responsive grid comes in 4 sizes or "breakpoints": tiny (xs), small(sm), medium(md) and large(lg). These 4 grid sizes enable you create responsive layouts that behave accordingly on different devices.
-                  </p>
-                  <a href="#three" class="btn btn-default btn-xl page-scroll">Learn More</a>
-              </div>
-          </div>
-      </div>
-  </section>
-
-
-	<footer id="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-6 col-sm-3 column">
-                    <h4>Information</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Benefits</a></li>
-                        <li><a href="">Developers</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-sm-3 column">
-                    <h4>About</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms &amp; Conditions</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-3 column">
-                    <h4>Stay Posted</h4>
-                    <form>
-                        <div class="form-group">
-                          <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email">
-                        </div>
-                        <div class="form-group">
-                          <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-xs-12 col-sm-3 text-right">
-                    <h4>Follow</h4>
-                    <ul class="list-inline">
-                      <li><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
-                      <li><a rel="nofollow" href="" title="Facebook"><i class="icon-lg ion-social-facebook-outline"></i></a>&nbsp;</li>
-                      <li><a rel="nofollow" href="" title="Dribble"><i class="icon-lg ion-social-dribbble-outline"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <br/>
-            <span class="pull-right text-muted small" background-color="black"> ©SAR</span>
-        </div>
-    </footer>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+</body>
 </html>
-
