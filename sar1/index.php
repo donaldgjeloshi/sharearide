@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles1.css" />
 </head>
 <body>
 <?php
@@ -39,7 +39,7 @@
             <span>Von...</span>
         </label>
     </div>
-
+<link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
     <div class="c-input c-input--half">
         <img src="https://d1ovtcjitiy70m.cloudfront.net/vi-1/images/homepage/2016/icon-circle.svg" alt="" aria-hidden="true" class="c-input-icon" width="20" height="20">
         <input type="text" id="search_to_name" name="tn" class="c-input-field u-fullWidth place-autocomplete" placeholder="" data-autocomplete="name" autocomplete="off" data-js="form-input-to">
@@ -67,8 +67,8 @@
                 </div>
             </div>-->
     </div>
-    <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="img/img.jpg" id="video-background">
-        <source src="video/streett.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+    <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s"  id="video-background">
+        <source src="video/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
     </video>
 </header>
 

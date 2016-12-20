@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles1.css" />
 		
 	</head>
 	
@@ -46,7 +46,7 @@
 						<fieldset>
 							
 							<!-- Form Name -->
-							<legend style= "color:red" >LOG IN</legend>
+							<h2><legend style= "color:black" >Log In</legend></h2>
 							
 							
 							<div class="col-md-6 col-md-offset-2">

@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles1.css" />
 		
 		
 	</head>
@@ -51,7 +51,7 @@
 						<fieldset>
 							
 							<!-- Form Name -->
-							<legend style="color:red">SIGN UP</legend>
+							<h2><legend style="color:black">Sign Up</legend></h2>
 							
 							<!-- Text input-->
 							<div class="col-md-6 col-md-offset-2">
@@ -137,17 +137,17 @@
 											<div class="col-sm-6">
 												<div class="row">
 													<div class="col-sm-4">
-														<label for="femaleRadio"class="radio-inline">
+														<label for="femaleRadio"class="radio-inline" style= "color:Black">
 															<input name="gender" type="radio" id="femaleRadio" value="Female">Female
 														</label>
 													</div>
 													<div class="col-sm-4">
-														<label for="maleRadio" class="radio-inline">
+														<label for="maleRadio" class="radio-inline" style= "color:Black">
 															<input name="gender" type="radio" id="maleRadio" value="Male">Male
 														</label>
 													</div>
 													<div class="col-sm-4">
-														<label for="uncknownRadio" class="radio-inline">
+														<label for="uncknownRadio" class="radio-inline" style= "color:Black">
 															<input name="gender" type="radio" id="uncknownRadio" value="Unknown">Unknown
 														</label>
 													</div>

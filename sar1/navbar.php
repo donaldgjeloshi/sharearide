@@ -13,7 +13,7 @@
             <ul class="nav navbar-nav">
                 
                 <li>
-                    <a class="page-scroll" href="about.php">About</a>
+                    <a class="page-scroll" href="info.php">Info</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="findaride.php">Find a ride</a>
