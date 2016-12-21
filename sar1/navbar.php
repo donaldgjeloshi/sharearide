@@ -28,11 +28,15 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
+                    <a class="page-scroll" href="../al">shqip</a>
+                </li>
+                <li>
                     <a class="page-scroll" href="login.php">Log In</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="singUp.php">Register</a>
                 </li>
+
 
             </ul>
         </div>

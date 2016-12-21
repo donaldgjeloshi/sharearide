@@ -19,9 +19,7 @@
                     <div class="form-group">
                         <input type="text" class="form-control" title="We look forward to new ideas!" placeholder="Give us your feedback">
                     </div>
-                    <div class="form-group">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
-                    </div>
+                    
                 </form>
             </div>
             <div class="col-xs-12 col-sm-3 text-right">

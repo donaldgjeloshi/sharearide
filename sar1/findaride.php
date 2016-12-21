@@ -49,15 +49,15 @@
 							<legend style= "color:Black" >Find a Ride</legend>
 
 							<div class="form-group">
-								<label class="control-label col-sm-3">Search</label>
-								<div class="col-sm-5">
+								<label style= "color:BLACK " class="control-label col-sm-3">Search</label>
+								<div class="col-sm-6">
 									<div class="row">
 										<div class="col-sm-5">
 											<label for="femaleRadio"class="radio-inline" style= "color:Black" >
 												<h4>	<input name="search" type="radio" id="ride" value="Ride">Ride</h4>
 											</label>
 										</div>
-										<div class="col-sm-5">
+										<div class="col-lg-5">
 											<label for="Driver" class="radio-inline" style= "color:Black">
 												<h4><input name="search" type="radio" id="Driver" value="Driver">Driver </h4>
 											</label>

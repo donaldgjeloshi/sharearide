@@ -47,9 +47,9 @@
 						<fieldset>
 							
 							<!-- Form Name -->
-							<legend style= "color:red">CONTACT</legend>
+							<legend style= "color:black">CONTACT</legend>
 														
-							<h2 style="color:blue" align="center" >Coming Soon</h2>
+							<h2 style="color:dodgerblue" align="center" >Coming Soon</h2>
 							
 						</fieldset>
 					</form>

@@ -59,38 +59,38 @@
 									<form class="form-horizontal" role="form">
 									<!-- Firs Name-->
 										<div class="form-group">
-											<label for="firstName" class="col-sm-3 control-label">First Name</label>
+											<label for="firstName" style= "color:BLACK" class="col-sm-3 control-label">First Name</label>
 											<div class="col-sm-9">
 												<input name="firstname" type="text" id="firstName" placeholder="First Name" class="form-control" />
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="firstName" class="col-sm-3 control-label">Last Name</label>
+											<label for="firstName" style= "color:BLACK" class="col-sm-3 control-label">Last Name</label>
 											<div class="col-sm-9">
 												<input name="lastname" type="text" id="firstName" placeholder="Last Name" class="form-control" >
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="email" class="col-sm-3 control-label">Email</label>
+											<label for="email" style= "color:BLACK" class="col-sm-3 control-label">Email</label>
 											<div class="col-sm-9">
 												<input name="email" type="email" id="email" placeholder="Email" class="form-control" >
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="password" class="col-sm-3 control-label">Password</label>
+											<label for="password" style= "color:BLACK" class="col-sm-3 control-label">Password</label>
 											<div class="col-sm-9">
 												<input name="password" type="password" id="password" placeholder="Password" class="form-control" >
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="passwordConfirm" class="col-sm-3 control-label">Confirm Password</label>
+											<label for="passwordConfirm"  style= "color:BLACK" class="col-sm-3 control-label">Confirm Password</label>
 											<div class="col-sm-9">
 												<input type="password" name="confirmpassword" id="passwordConfirm" class="form-control" placeholder="Confirm Password"  >
 												
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
+											<label for="birthDate"  style= "color:BLACK" class="col-sm-3 control-label">Date of Birth</label>
 											<div class="col-sm-9">
 												<!-- <input name="geburtstag" type="date" id="birthDate" data-min="01/15/2013" data-max="today" class="form-control">
 												--><div class="bfh-datepicker" data-format="d-m-y" data-date="today" data-max="today">
@@ -98,7 +98,7 @@
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="state" class="col-sm-3 control-label">State</label>
+											<label for="state"  style= "color:BLACK" class="col-sm-3 control-label">State</label>
 											<div class="col-sm-9">
 												<select name="state"id="countries_states1" class="form-control bfh-countries" data-country="AL"></select>
 												<!--<div class="bfh-selectbox bfh-countries" data-country="US" data-flags="true">
@@ -120,13 +120,13 @@
 											</div>
 										</div> 
 										<div class="form-group">
-											<label for="country" class="col-sm-3 control-label">Country</label>
+											<label for="country"  style= "color:BLACK" class="col-sm-3 control-label">Country</label>
 											<div class="col-sm-9">
 												<select name="country" class="form-control bfh-states" data-country="countries_states1"></select>
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="phone" class="col-sm-3 control-label">Handy</label>
+											<label for="phone" style= "color:BLACK" class="col-sm-3 control-label">Handy</label>
 											<div class="col-sm-9">
 												
 												<input name="phone" type="text" class="form-control bfh-phone" data-country="countries_states1">
@@ -146,11 +146,7 @@
 															<input name="gender" type="radio" id="maleRadio" value="Male">Male
 														</label>
 													</div>
-													<div class="col-sm-4">
-														<label for="uncknownRadio" class="radio-inline" style= "color:Black">
-															<input name="gender" type="radio" id="uncknownRadio" value="Unknown">Unknown
-														</label>
-													</div>
+
 												</div>
 											</div>
 										</div> 
@@ -170,7 +166,7 @@
 											</div>
 										</div>
 										<div class="col-sm-offset-3 col-sm-9">
-											<div class="form-group last">Already registered? <a href="login.php">Login here</a>
+											<div style= "color:BLACK" class="form-group last">Already registered? <a href="login.php">Login here</a>
 											</div>
 										</div>
 									</form> <!-- /form -->
